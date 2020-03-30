@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/cover/cover",
-    "pages/planPage/planPage"
+    "pages/planPage/planPage",
+    "pages/community/community",
+    "pages/weeklyPlan/weeklyPlan",
+    "pages/myselfPage/myselfPage"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,4 +14,5 @@
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
+
 }

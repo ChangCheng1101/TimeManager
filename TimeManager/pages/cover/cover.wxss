@@ -1,6 +1,5 @@
-bg-cover{
-width:100vw;
-height:100vh;
-background: url("https://hyculture.top/timemanager");
-background-size:100% 100%;
+.bg{
+  width:98vw;
+  height:99vh;
+  margin:10rpx;
 }
