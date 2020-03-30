@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/cover/cover",
+    "pages/planPage/planPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "TimeManager",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
