@@ -2,17 +2,18 @@
   "pages": [
     "pages/cover/cover",
     "pages/planPage/planPage",
-    "pages/community/community",
     "pages/weeklyPlan/weeklyPlan",
     "pages/myselfPage/myselfPage"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000000",
+    "navigationBarBackgroundColor": "#3b1bfd",
     "navigationBarTitleText": "TimeManager",
     "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+ "tabBar":{
 
+ }
 }
