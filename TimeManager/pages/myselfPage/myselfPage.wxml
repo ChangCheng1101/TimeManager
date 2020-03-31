@@ -1,2 +1,27 @@
-<!--pages/myselfPage/myselfPage.wxml-->
-<text>pages/myselfPage/myselfPage.wxml</text>
+<!--背景图-->
+<view class = "background">
+  <image class = "bg-img" src = "../../images/myself-img/background.jpg" mode = "widthFix"></image>
+  <image class = "bg-gif" src = "../../images/myself-img/wave.gif" mode = "scaleFix"></image>
+</view>
+<!--选项列表-->
+<view class = "cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+  <view class = "cu-item arrow">
+    <view class = "content" bindtap="LoginRegister">
+      <text class = "cuIcon-vip text-mauve"></text>
+      <text class = "text-grey">登陆/注册</text>
+    </view>
+  </view>
+  <view class = "cu-item arrow">
+    <view class = "content" bindtap="CopyLink" data-link = "https://github.com/ChangCheng1101/TimeManager">
+      <text class = "cuIcon-github text-grey"></text>
+      <text class = "text-grey">GitHub</text>
+    </view>
+  </view>
+  <view class = "cu-item arrow">
+    <button class = "cu-btn content" open-type = "feedback">
+      <text class = "cuIcon-writefill text-cyan"></text>
+      <text class = "text-grey">意见反馈</text>
+    </button>
+  </view>
+  
+</view>
