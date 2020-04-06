@@ -4,7 +4,9 @@
     "pages/planPage/planPage",
     "pages/weeklyPlan/weeklyPlan",
     "pages/myselfPage/myselfPage",
-    "pages/community/community"
+    "pages/community/community",
+    "pages/login/login",
+    "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",

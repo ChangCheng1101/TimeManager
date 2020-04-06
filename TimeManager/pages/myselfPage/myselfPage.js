@@ -11,5 +11,23 @@ Page({
       }
     })
   },
-  
+  LoginRegister(){
+    wx.showActionSheet({
+      itemList: ['登陆', '注册'],
+      success(res) {
+       if(res.tapIndex == 0){
+         wx.navigateTo({
+           url: '../login/login',
+         })
+       }else{
+         wx.navigateTo({
+           url: '../register/register',
+         })
+       }
+      },
+      fail(res) {
+        console.log(res.errMsg)
+      }
+    })
+  }
 })
