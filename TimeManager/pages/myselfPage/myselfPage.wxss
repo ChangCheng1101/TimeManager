@@ -1,3 +1,4 @@
+
 .background{
   background-size: cover;
   height:550rpx;
@@ -9,13 +10,31 @@
   flex-direction: column;
   align-items: center;
 }
-.background image{
+.bg-img{
   width:100%;
+  z-index: -99;
 }
 .bg-gif{
+  width: 100%;
   z-index: 99;
   mix-blend-mode: screen;
   position: absolute;
   bottom:0;
   height:35%;
+}
+.bg-touxiang{
+  display: flex;
+  z-index: 1;
+  width:215rpx;
+  height: 215rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  
+}
+.bg-nickname{
+  z-index: 2;
+  position: absolute;
+  padding-top: 185px;
+  font-size: 22px;
 }

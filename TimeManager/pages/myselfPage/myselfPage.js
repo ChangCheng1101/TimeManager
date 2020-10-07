@@ -1,5 +1,10 @@
 // pages/myselfPage/myselfPage.js
 Page({
+  data:{
+      nickname:"",
+      avatarurl:"",
+    
+  },
   CopyLink(e){
     wx.setClipboardData({
       data: e.currentTarget.dataset.link,
@@ -11,23 +16,20 @@ Page({
       }
     })
   },
-  LoginRegister(){
-    wx.showActionSheet({
-      itemList: ['登陆', '注册'],
-      success(res) {
-       if(res.tapIndex == 0){
-         wx.navigateTo({
-           url: '../login/login',
-         })
-       }else{
-         wx.navigateTo({
-           url: '../register/register',
-         })
-       }
-      },
-      fail(res) {
-        console.log(res.errMsg)
-      }
+  onGetUserInfo:function(e){
+    var un = e.detail.userInfo.nickName;
+    var ava = e.detail.userInfo.avatarUrl;
+    var nick = 'nickname';
+    var avatar = 'avatarurl';
+    console.log(un);
+    this.setData({
+        [nick]:un,
+        [avatar]:ava,
+      })
+    console.log(ava);
+    wx.showToast({
+      title: '登陆成功',
+      duration:1000,
     })
   }
 })

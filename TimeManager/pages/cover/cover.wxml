@@ -1,3 +1,5 @@
-<!--第一张背景图-->
-<view class="bg" style="background:url('https://hyculture.top/timemanager.jpg') no-repeat center;background-size: 100% 100%"></view>
-<!--渐变过去的又一张-->
+<!--封面-->
+<view class="bg" 
+      style="background:url('http://www.claudiachang.top/tm_images/cover.png') no-repeat center;background-size: 100% 100%">
+</view>
+

@@ -4,6 +4,6 @@ Page({
       wx.switchTab({
         url: '../planPage/planPage',
       })
-    },3000)
+    },4000)
   }
 })
