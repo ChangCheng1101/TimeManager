@@ -1,0 +1,9 @@
+<!--每日计划页面-->
+<!--轮播图-->
+<swiper class = "card-swiper square-dot" indicator-dots="true" indicator-active-color="#3b1bfd" autoplay="true" circular = "true" indicator-color="#3b1bf2"  bindchange="swiperBindChange">
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <view class = "swiper-item">
+      <image class = " {{currentSwiperIndex == index ? 'zoom-in' : 'zoom-out'}}" src = "{{item.url}}" mode="aspectFill" wx:if="{{item.type == 'image'}}"/>
+    </view>
+  </swiper-item>
+</swiper>

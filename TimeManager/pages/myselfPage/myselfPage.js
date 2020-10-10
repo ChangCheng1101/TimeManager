@@ -31,5 +31,8 @@ Page({
       title: '登陆成功',
       duration:1000,
     })
+  },
+  onShareAppMessage:function(){
+    
   }
 })

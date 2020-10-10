@@ -5,7 +5,7 @@
     "pages/weeklyPlan/weeklyPlan",
     "pages/myselfPage/myselfPage",
     "pages/community/community",
-    "pages/login/login",
+    "pages/plusPlan/plusPlan",
     "pages/register/register"
   ],
   "window": {
@@ -29,7 +29,7 @@
      },
      {
        "pagePath":"pages/community/community",
-       "text":"社区",
+       "text":"好友",
        "iconPath":"images/tabBar-img/community.png",
        "selectedIconPath":"images/tabBar-img/sel-community.png"
      },
