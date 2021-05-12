@@ -9,7 +9,7 @@
 <!--选项列表-->
 <view class = "cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
   <view class = "cu-item arrow">
-    <button class = "cu-btn content" open-type = "getUserInfo" bindgetuserinfo = "onGetUserInfo">
+    <button class = "cu-btn content" open-type = "getUserInfo" bindtap = "onGetUserProfile">
       <text class = "cuIcon-vip text-mauve"></text>
       <text class = "text-grey">登陆</text>
     </button>

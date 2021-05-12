@@ -1,4 +1,5 @@
 // pages/planPage/planPage.js
+const app = getApp();
 Page({
 
   /**
@@ -92,9 +93,26 @@ Page({
     })
   },
   jumpPlus(e){
-    wx.navigateTo({
-      url: '../plusPlan/plusPlan',
-    })
+    console.log(app.globalData.isLogin)
+    //当前小程序没有在登陆的用户，就提醒用户登陆
+    if(app.globalData.isLogin == "false"){
+      wx.showModal({
+        title:"提示",
+        content:"当前未登陆，是否要跳转登陆",
+        success:res=>{
+          if(res.confirm){
+            wx.switchTab({
+              url: '../myselfPage/myselfPage',
+            })
+          }
+        }
+      })
+    }else{
+      wx.navigateTo({
+        url: '../plusPlan/plusPlan',
+      })
+    }
+    
   },
   onLoad:function(){
     var detail = wx.getStorageSync("details");

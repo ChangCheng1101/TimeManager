@@ -1,5 +1,7 @@
 <!--封面-->
-<view class="bg" 
-      style="background:url('../../images/tm_cover.png') no-repeat center;background-size: 100% 100%">
+<view>
+<image      class="bg"
+            src = "cloud://ccxcx-01b8d.6363-ccxcx-01b8d-1301490213/images/tm_cover.png"
+            style="no-repeat center;background-size: 100% 100%"></image>
 </view>
 

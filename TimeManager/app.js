@@ -12,7 +12,7 @@ App({
     });
   },
   globalData: {
-    userInfo: null,
+    isLogin:"false",
   },
   onShareAppMessage: function () {
   },

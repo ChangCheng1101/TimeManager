@@ -34,7 +34,7 @@
   },
   "appid": "wx363df1bd35bf918d",
   "projectname": "TimeManager",
-  "libVersion": "2.13.1",
+  "libVersion": "2.16.1",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",

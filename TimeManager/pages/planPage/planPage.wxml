@@ -9,7 +9,7 @@
 </swiper>
 <!--增加日计划按钮-->
 <view class = "plusBtn">
-  <button class = "plus shadow" bindtap="jumpPlus" >
+  <button class = "plus shadow" bindtap="jumpPlus">
     <image src = "cloud://ccxcx-01b8d.6363-ccxcx-01b8d-1301490213/images/plus.png" class = "plusBtn-img"/>
     <text class = "btnText text-darkgray">增加计划</text>
   </button>
