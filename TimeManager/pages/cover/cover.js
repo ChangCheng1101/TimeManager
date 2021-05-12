@@ -2,9 +2,9 @@ Page({
   onShow:function(){
     setTimeout(function(){
       wx.switchTab({
-        url: '../planPage/planPage',
+        url: '../myselfPage/myselfPage',
       })
-    },4000)
+    },3000)
   },
   onShareAppMessage: function () {
     var shareObj = {

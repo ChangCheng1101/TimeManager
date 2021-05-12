@@ -1,9 +1,25 @@
 <!--每日计划页面-->
 <!--轮播图-->
-<swiper class = "card-swiper square-dot" indicator-dots="true" indicator-active-color="#3b1bfd" autoplay="true" circular = "true" indicator-color="#3b1bf2"  bindchange="swiperBindChange">
+<swiper class = "card-swiper square-dot" indicator-dots="true" indicator-active-color="#3b1bfd" autoplay="true" circular = "true" indicator-color="#3b1bf2"  bindchange="swiperBindChange" bindtap="fileLoad">
   <swiper-item wx:for="{{swiperList}}" wx:key="id">
     <view class = "swiper-item">
-      <image class = " {{currentSwiperIndex == index ? 'zoom-in' : 'zoom-out'}}" src = "{{item.url}}" mode="aspectFill" wx:if="{{item.type == 'image'}}"/>
+      <image class = "slide-img {{currentSwiperIndex == index ? 'slide-in' : 'slide-out'}}" src = "{{item.url}}" mode="aspectFill" wx:if="{{item.type == 'image'}} "/>
     </view>
   </swiper-item>
 </swiper>
+<!--增加日计划按钮-->
+<view class = "plusBtn">
+  <button class = "plus shadow" bindtap="jumpPlus" >
+    <image src = "cloud://ccxcx-01b8d.6363-ccxcx-01b8d-1301490213/images/plus.png" class = "plusBtn-img"/>
+    <text class = "btnText text-darkgray">增加计划</text>
+  </button>
+  <button class = "plus-little shadow" bindtap="checkPlan" style="width:50px">
+    <image src = "cloud://ccxcx-01b8d.6363-ccxcx-01b8d-1301490213/images/bingo.png" class = "plusBtn-img"/>
+  </button>
+</view>
+<!--计划列表-->
+<view class = "plan-list">
+  <view class = "plan-title" wx:for="{{plans_1}}" wx:key="index">
+    <text class = "text-darkgray">{{item}}</text>
+  </view>
+</view>

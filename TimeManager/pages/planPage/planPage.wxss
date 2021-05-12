@@ -1,9 +1,36 @@
 /* pages/planPage/planPage.wxss */
-.zoom-out{
-  transform: scale(0.5);
+.slide-out{
+  transform: scale(0.96);
   transition:all 0.7s ease-out 0s;
 }
-.zoom-in{
+.slide-in{
   transform: scale(1);
   transition: all 0.7s ease-in 0s;
+}
+.slide-img{
+  border-radius: 20rpx;
+}
+.plus{
+  border-radius: 30rpx;
+  border: 1.5px solid #3742fa; 
+ 
+
+}
+.plus-little{
+  border-radius: 30rpx;
+  border: 1.5px solid #3742fa;
+  
+}
+.plusBtn-img{
+  width:40rpx;
+  height: 40rpx;
+  position: absolute;
+  margin-left: -10px;
+}
+.btnText{
+  margin-left: 20px;
+}
+.plusBtn{
+  display: flex;
+  flex-direction: row;
 }

@@ -1,10 +1,10 @@
 <!--上半部分-->
 <view class = "background">
-  <image class = "bg-img" src = "https://www.claudiachang.top/tm_images/background.jpg" mode = "widthFix"></image>
-  <image class = "bg-touxiang" src = "http://www.claudiachang.top/tm_images/TM.png"/>
+  <image class = "bg-img" src = "cloud://ccxcx-01b8d.6363-ccxcx-01b8d-1301490213/images/myself-img/background.jpg" mode = "widthFix"></image>
+  <image class = "bg-touxiang" src = "cloud://ccxcx-01b8d.6363-ccxcx-01b8d-1301490213/images/myself-img/tm-logo.png"/>
   <image class = "bg-touxiang" src = '{{avatarurl}}'/>
   <text class = "bg-nickname text-darkgray">{{nickname}}</text>
-  <image class = "bg-gif" src = "https://www.claudiachang.top/tm_images/wave.gif" mode = "scaleFix"></image>
+  <image class = "bg-gif" src = "cloud://ccxcx-01b8d.6363-ccxcx-01b8d-1301490213/images/myself-img/wave.gif" mode = "scaleFix"></image>
 </view>
 <!--选项列表-->
 <view class = "cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">

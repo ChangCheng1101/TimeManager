@@ -17,6 +17,23 @@ Page({
     })
   },
   onGetUserInfo:function(e){
+    console.log(e);
+    //把数据放到云数据库里
+    const db = wx.cloud.database({});
+    const collection = db.collection("tm_user");
+    collection.add({
+      data:{
+        name:e.detail.userInfo.nickName,
+        city:e.detail.userInfo.city,
+        country:e.detail.userInfo.country,
+        province:e.detail.userInfo.province,
+        language:e.detail.userInfo.language,
+      },
+      success:function(res){
+        console.log(res)
+      }
+    })
+    //显示出来
     var un = e.detail.userInfo.nickName;
     var ava = e.detail.userInfo.avatarUrl;
     var nick = 'nickname';

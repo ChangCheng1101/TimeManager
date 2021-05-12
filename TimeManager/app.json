@@ -29,7 +29,7 @@
      },
      {
        "pagePath":"pages/community/community",
-       "text":"好友",
+       "text":"学习小组",
        "iconPath":"images/tabBar-img/community.png",
        "selectedIconPath":"images/tabBar-img/sel-community.png"
      },
